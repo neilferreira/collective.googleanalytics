@@ -1,9 +1,9 @@
-<configure 
+<configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="collective.googleanalytics">
-        
+
     <browser:page
         for="collective.googleanalytics.interfaces.utility.IAnalytics"
         name="analytics-controlpanel"
@@ -11,7 +11,7 @@
         permission="cmf.ManagePortal"
         layer="..interfaces.browserlayer.IAnalyticsLayer"
         />
-        
+
     <browser:page
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         name="analytics-auth"
@@ -24,16 +24,16 @@
 		name="analytics_images"
 		directory="images"
 		/>
-		
+
     <browser:resource
         name="analytics_config.js"
         file="analytics_config.js"
         layer="..interfaces.browserlayer.IAnalyticsLayer"
         />
-    
+
 
 	<configure package="Products.GenericSetup.browser">
-	
+
 		<browser:page
 		    for="collective.googleanalytics.bbb.IAdding"
 		    name="add_analytics_report"

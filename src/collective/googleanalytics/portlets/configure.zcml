@@ -1,4 +1,4 @@
-<configure 
+<configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.googleanalytics">
@@ -8,13 +8,13 @@
   <include package="plone.app.portlets" />
   <!-- -*- extra stuff goes here -*- -->
 
-  <plone:portlet
+<!--   <plone:portlet
       name="collective.googleanalytics.AnalyticsPortlet"
       interface=".analyticsportlet.IAnalyticsPortlet"
       assignment=".analyticsportlet.Assignment"
       renderer=".analyticsportlet.Renderer"
       addview=".analyticsportlet.AddForm"
       editview=".analyticsportlet.EditForm"
-      />
+      /> -->
 
 </configure>
